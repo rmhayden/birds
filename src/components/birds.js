@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+
 import { Link } from "react-router-dom";
 
 const Birds = (props) => {
@@ -43,7 +44,7 @@ return (
 
                   <img
                     src={bird.image}
-                    alt="Acadian Flycatcher"
+                    alt={bird.name}
                   />
                 </div>
                 <div className="card-title">
