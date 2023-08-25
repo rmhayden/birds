@@ -2,9 +2,8 @@ import React from 'react';
 
 import { Routes, Route } from 'react-router-dom'
 
-// import { Route } from 'react-router-dom'
-
 import Birds from './components/birds';
+import BirdDetails from './components/birdDetails';
 
 function App() {
   return (
@@ -17,16 +16,13 @@ function App() {
       </header>
 
       <main>
-      
- {/* <Birds /> */}
-
-
+    
   <Routes>
     <Route path="/" element={ <Birds /> } />
+    <Route path="/details/:id" element={ <BirdDetails />} />
   </Routes>
 
 </main>
-
 
     </>
   );
